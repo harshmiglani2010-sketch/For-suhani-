@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Suhani ❤️</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #ff758c, #ff7eb3);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(12px);
+      border-radius: 22px;
+      padding: 32px;
+      max-width: 400px;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+      animation: fadeIn 1.5s ease;
+    }
+
+    .heart {
+      font-size: 2.8rem;
+      animation: pulse 1.5s infinite;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: 2.1rem;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      margin-bottom: 18px;
+      font-weight: 400;
+      opacity: 0.95;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 22px;
+    }
+
+    .btn {
+      background: #fff;
+      color: #ff4d6d;
+      border: none;
+      padding: 12px 26px;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+      margin: 6px;
+    }
+
+    .btn:hover {
+      background: #ff4d6d;
+      color: #fff;
+      transform: scale(1.07);
+    }
+
+    .yes {
+      display: none;
+      font-size: 1.2rem;
+      margin-top: 18px;
+      animation: fadeIn 1s ease;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="heart">❤️</div>
+    <h1>Suhani</h1>
+    <h2>Happy Valentine's Day</h2>
+
+    <p>
+      You are my only favourite person — the one who supports me every time
+      and the one who cares about me a lot.
+    </p>
+
+    <p>
+      Having you in my life makes everything feel lighter, happier, and more meaningful.
+    </p>
+
+    <p><strong>— Harsh</strong></p>
+
+    <button class="btn" onclick="askValentine()">Will you be my Valentine? 💖</button>
+
+    <div class="yes" id="yesMsg">
+      💍 Yay! You just made me the happiest person ❤️<br />
+      I love you, Suhani — always.
+    </div>
+  </div>
+
+  <script>
+    function askValentine() {
+      document.getElementById('yesMsg').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
+
